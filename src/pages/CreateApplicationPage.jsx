@@ -14,7 +14,7 @@ const LICENSE_TYPES = [
 
 export default function CreateApplicationPage() {
   const navigate = useNavigate();
-  const [form, setForm]       = useState({ institutionName: '', licenseType: '' });
+  const [form, setForm]       = useState({ registrationId: '', institutionName: '', licenseType: '' });
   const [error, setError]     = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -41,6 +41,14 @@ export default function CreateApplicationPage() {
           <div className="card">
             <div className="card-body">
               <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <label className="form-label">Registration ID <span className="text-danger">*</span></label>
+                  <input type="text" className="form-control" required
+                    maxLength={9} pattern="\d{9}" placeholder="9-digit number"
+                    value={form.registrationId}
+                    onChange={(e) => setForm({ ...form, registrationId: e.target.value.replace(/\D/g, '').slice(0, 9) })} />
+                  <div className="form-text">Unique 9-digit identifier of the institution.</div>
+                </div>
                 <div className="mb-3">
                   <label className="form-label">Institution Name <span className="text-danger">*</span></label>
                   <input type="text" className="form-control" required

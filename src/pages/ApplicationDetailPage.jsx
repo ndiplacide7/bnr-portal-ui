@@ -219,6 +219,8 @@ export default function ApplicationDetailPage() {
           <div className="col-md-6">
             <table className="table table-sm">
               <tbody>
+                <tr><td className="text-muted w-50">Registration ID</td>
+                  <td><span className="font-monospace fw-semibold">{app.registrationId}</span></td></tr>
                 <tr><td className="text-muted w-50">Applicant</td>
                   <td>{app.applicant?.firstName} {app.applicant?.lastName}</td></tr>
                 {app.reviewer && (

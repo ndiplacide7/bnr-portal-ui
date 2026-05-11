@@ -46,6 +46,7 @@ export default function ApplicationsPage() {
                 <table className="table table-hover align-middle">
                   <thead className="table-light">
                     <tr>
+                      <th>Reg. ID</th>
                       <th>Institution</th>
                       <th>License Type</th>
                       <th>Status</th>
@@ -57,6 +58,7 @@ export default function ApplicationsPage() {
                   <tbody>
                     {data.content.map((app) => (
                       <tr key={app.id}>
+                        <td className="font-monospace small">{app.registrationId}</td>
                         <td className="fw-medium">{app.institutionName}</td>
                         <td className="text-muted small">{app.licenseType?.replace(/_/g, ' ')}</td>
                         <td><StatusBadge status={app.status} /></td>
