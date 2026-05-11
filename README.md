@@ -1,32 +1,32 @@
 # BNR Licensing Portal — Frontend
 
-The web interface for the BNR licensing system. Built as an internal tool for regulators and applicants — clarity and correctness over decoration. Every action a user cannot perform is hidden, not just disabled.
-
+The web interface for the BNR licensing system. Built as an internal tool for regulators and applicants.
 
 ---
 
 ## Tech Stack
 
-| | |
-|--|--|
-| Framework | React 18 + Vite |
-| Routing | React Router v6 |
-| HTTP | Axios |
-| Styling | Bootstrap 5 (CDN) |
-| State | React Context + localStorage |
+<!-- TOC -->
+* **Framework** : React 18 + Vite 
+* **Routing** : React Router v6 
+* **HTTP** : Axios 
+* **Styling** : Bootstrap 5 (CDN) 
+* **State** : React Context + localStorage
+<!-- TOC -->
 
 ---
 
 ## Prerequisites
-
 - Node.js 18+
-- The backend running at `http://localhost:8080`
+- The backend running at `http://localhost:8080` which is configured in `src/api/client.js`
 
 ---
 
 ## Running Locally
 
 ```bash
+git clone git@github.com:ndiplacide7/bnr-portal-ui.git or git clone https://github.com/ndiplacide7/bnr-portal-ui.git
+cd bnr-portal-ui
 npm install
 npm run dev
 ```
