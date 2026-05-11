@@ -2,7 +2,6 @@
 
 The web interface for the BNR licensing system. Built as an internal tool for regulators and applicants — clarity and correctness over decoration. Every action a user cannot perform is hidden, not just disabled.
 
-Built by **Eng. Placide** · [ndiplacide7@gmail.com](mailto:ndiplacide7@gmail.com)
 
 ---
 
